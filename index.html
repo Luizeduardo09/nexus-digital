@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Nexus Digital</title>
+    <meta
+      name="description"
+      content="Página de links personalizada - Nexus Digital."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-gradient"></div>
+    <main class="page">
+      <section class="card">
+        <header class="profile">
+          <div class="avatar-wrapper">
+            <img
+              src="./conteudo/SÍMBOLO.jpeg"
+              alt="Foto de perfil - Nexus Digital"
+              class="avatar-image"
+            />
+          </div>
+          <div class="profile-text">
+            <h1 class="name">Nexus Digital</h1>
+            <p class="tagline">Branding • Social Media • Conteúdo Digital</p>
+          </div>
+        </header>
+
+        <section class="stats">
+          <div class="stat">
+            <span class="stat-label">Seguidores</span>
+            <span class="stat-value">1.5k</span>
+          </div>
+          <div class="divider"></div>
+          <div class="stat">
+            <span class="stat-label">Projetos</span>
+            <span class="stat-value">20</span>
+          </div>
+          <div class="divider"></div>
+          <div class="stat">
+            <span class="stat-label">Experiência</span>
+            <span class="stat-value">+2 anos</span>
+          </div>
+        </section>
+
+        <section class="links">
+          <a
+            class="link-pill primary"
+            href="https://wa.me/5588996296618?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Nexus..."
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="link-label">Agende uma reunião</span>
+            <span class="link-sub">Consultoria 1:1 estratégica</span>
+          </a>
+
+          <a
+            class="link-pill"
+            href="https://www.instagram.com/nexus_agdigital"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="link-label">Instagram</span>
+            <span class="link-sub">@nexus_agdigital</span>
+          </a>
+
+          <a
+            class="link-pill"
+            href="https://wa.me/5588996296618?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Nexus..."
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="link-label">WhatsApp</span>
+            <span class="link-sub">Fale direto comigo</span>
+          </a>
+
+          <a class="link-pill" href="#" target="_blank" rel="noreferrer">
+            <!--./portifolio/index.html--> <!--EM BREVE-->
+            <span class="link-label">Portfólio (EM BREVE)</span>
+            <span class="link-sub">Cases e projetos em destaque</span>
+          </a>
+        </section>
+
+        <footer class="socials">
+          <a href="https://www.instagram.com/nexus_agdigital" class="social-chip" aria-label="Instagram">
+            <span>IG</span>
+          </a>
+          <!--
+          <a href="#" class="social-chip" aria-label="YouTube">
+            <span>FB</span>
+          </a> -->
+          <a href="https://www.linkedin.com/company/nexus-digital-ag%C3%AAncia/?viewAsMember=true" class="social-chip" aria-label="LinkedIn">
+            <span>IN</span>
+          </a>
+          <a href="https://wa.me/5588996296618?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Nexus..." class="social-chip" aria-label="TikTok">
+            <span>WP</span>
+          </a>
+        </footer>
+      </section>
+
+      <p class="watermark">Criado com carinho para a sua marca.</p>
+    </main>
+    <script>
+      const links = document.querySelectorAll(".link-pill");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          link.classList.add("active");
+          setTimeout(() => link.classList.remove("active"), 260);
+        });
+      });
+    </script>
+  </body>
+</html>
+
